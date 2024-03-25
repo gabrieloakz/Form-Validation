@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src="script1.js"></script>
+  </head>
+
+  <body>
+    <h1>Enviar Mensagens</h1>
+    <form id="form2">
+      <p>Primeiro nome: <input type="text" id="firstname" /> *</p>
+      <p>Último nome: <input type="text" id="lastname" /> *</p>
+      E-mail: <input type="text" id="email" /> *
+      <p>
+        <label for="fullname"><b>Sexo: </b></label>
+        <input
+          type="radio"
+          id="sex1"
+          value="Male"
+          ONCLICK="sex2.checked=false"
+        />
+        Masculino
+        <input
+          type="radio"
+          id="sex2"
+          value="Female"
+          ONCLICK="sex1.checked=false"
+        />
+        Feminino *
+      </p>
+      <p>
+        <b>Escrever a mensagem:</b><br />
+        <textarea id="textarea1" rows="5" cols="50"></textarea> *
+      </p>
+      <input
+        type="button"
+        id="button1"
+        value="Enviar"
+        ONCLICK="runForm2(form2)"
+      />
+      <input type="reset" value="Limpar" />
+    </form>
+  </body>
+</html>
